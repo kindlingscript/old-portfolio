@@ -1,0 +1,83 @@
+body {
+  color: #fff;
+  font-family: 'Khula', sans-serif;
+}
+
+.landing {
+  background: url('../images/portfolio-pic.jpeg') no-repeat 50% 100%;
+  background-size: cover;
+  height: 50em;
+}
+
+.welcome {
+  max-width: 500px;
+  padding-left: 10%;
+  padding-top: 18%;
+}
+
+h1 {
+  font-size: 3.4em;
+  margin: 0;
+  font-style: italic;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-align: justify;
+  max-width: 400px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.contact-click {
+  background-color: #d77f58;
+  border: none;
+  padding: 10px 15px 9px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 41%;
+}
+
+.contact-click:focus,
+.contact-click:hover {
+  outline: none;
+  cursor: pointer;
+}
+
+.about,
+.contact {
+  background-color: #D77F58;
+  overflow: hidden;
+  padding: 10% 12%;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  margin-left: 20%;
+}
+
+.portfolio {
+  background-color: #849BC4;
+}
+
+.portfolio > h1 {
+  text-align: center;
+  padding: 5% 0 3% 0;
+}
+
+.screenshots {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  margin-right: 3%;
+  margin-bottom: 5%;
+}
+
+input {
+  display: block;
+}
