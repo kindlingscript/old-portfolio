@@ -12,7 +12,7 @@
   <section class="landing">
     <div class="welcome">
       <h1>hi, i'm rebecca.</h1>
-      <h2>I’m a web developer who cares immensely about great UX, complemented with awesome UI. My tools include languages like JavaScript and Ruby, along with their libraries and frameworks.</h2>
+      <h2>I’m a web developer and UX enthusiast. My tools include languages like JavaScript and Ruby, along with their libraries and frameworks, as well as the Sketch app.</h2>
       <button class="contact-click">I'd love to talk with you!</button>
     </div>
     <div class="angle-down">
@@ -24,6 +24,7 @@
     <img src="images/profile-pic.png" class="picture" alt="picture of Rebecca">
     <div class="text">
       <h1>nice to meet you!</h1>
+      <p></p>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
     </div>
   </section>
@@ -31,14 +32,55 @@
   <section class="portfolio">
     <h1>here's some of my work:</h1>
     <div class="screenshots">
-      <img src="images/square.svg" class="square">
-      <img src="images/square.svg" class="square">
-      <img src="images/square.svg" class="square">
+      <div class="card square">
+        <div class="front">
+          <img src="images/streetfighter.png" class="street square">
+        </div>
+        <div class="back">
+          <p>Using gifs of Ryu, I used jQuery to smoothly animate two actions for the user to play with, as well as two music tracks.</p>
+          <p><a href="http://kindlingscript.github.io/jquery-streetfighter" target="_blank">Visit the site</a></p>
+        </div>
+      </div>
+      <div class="card-2 square">
+        <div class="front">
+          <img src="images/shopping-list.png" class="street square">
+        </div>
+        <div class="back">
+          <p>A personal shopping list app made with jQuery. You can add, check off, undo the check off, and delete your items. A small autofinish function is also used.</p>
+          <p><a href="http://kindlingscript.github.io/shopping-list" target="_blank">Visit the site</a></p>
+        </div>
+      </div>
+      <div class="card-3 square">
+        <div class="front">
+          <img src="images/hot-or-cold.png" class="street square">
+        </div>
+        <div class="back">
+          <p>This is a number guessing game in which the objective is to correctly guess the "magic number" (between 1 and 100). A new number is generated with each game.</p>
+          <p><a href="http://kindlingscript.github.io/hot-or-cold" target="_blank">Visit the site</a></p>
+        </div>
+      </div>
     </div>
+
     <div class="screenshots">
-      <img src="images/square.svg" class="square">
-      <img src="images/square.svg" class="square">
-      <img src="images/square.svg" class="square">
+      <div class="card-4 square">
+        <div class="front">
+          <img src="images/korra.png" class="street square">
+        </div>
+        <div class="back">
+          <p>Lorem ipsum</p>
+          <p><a href="http://kindlingscript.github.io/lok-quiz" target="_blank">Visit the site</a></p>
+        </div>
+      </div>
+      <div class="card-5 square">
+        <div class="front">
+          <img src="images/tune-out.png" class="street square">
+        </div>
+        <div class="back">
+          <p>Lorem ipsum</p>
+          <p><a href="http://kindlingscript.github.io/tune-out" target="_blank">Visit the site</a></p>
+        </div>
+      </div>
+      <!-- <img src="images/square.svg" class="square"> -->
     </div>
   </section>
 
@@ -51,14 +93,14 @@
       <input type="text" size="40" placeholder="Your name"></input>
       <input type="email" size="40" placeholder="Your email"></input>
       <textarea rows="5" cols="50" placeholder="Say hi if you want! Just start typing :)"></textarea>
-      <input type="submit"></input>
+      <input type="submit" value="send"></input>
     </form>
   </section>
 
   <footer>
     <section class="social">
       <h3>Still reading?</h3>
-      <p class="cta">Hey you wonderful person! <i class="fa fa-smile-o"></i> Thanks so much for visiting, and feel<br> free to connect with me <!-- <br> -->on any of the following sites!</p>
+      <p class="cta">Hey you wonderful person! <i class="fa fa-smile-o"></i> Thanks so much for visiting, and feel<br> free to connect with me on any of the following sites!</p>
       <div class="social-icons">
         <i class="fa fa-github fa-2x"></i>
         <i class="fa fa-facebook fa-2x"></i>
@@ -70,6 +112,7 @@
 
   <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/jquery.flip.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

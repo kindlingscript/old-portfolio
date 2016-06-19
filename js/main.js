@@ -14,4 +14,10 @@ $(document).ready(function() {
         scrollTop: $('.about').offset().top
     }, 2000);
   });
+
+  $('.card, .card-2, .card-3, .card-4, .card-5').flip({
+    trigger: 'hover',
+    speed: 1500,
+    reverse: true
+  });
 });
