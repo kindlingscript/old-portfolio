@@ -50,7 +50,7 @@ h2 {
 .contact {
   background-color: #D77F58;
   overflow: hidden;
-  padding: 10% 12%;
+  padding: 7% 14%;
   display: flex;
   justify-content: center;
 }
@@ -61,6 +61,7 @@ h2 {
 
 .portfolio {
   background-color: #849BC4;
+  padding: 3% 0 5% 0;
 }
 
 .portfolio > h1 {
@@ -75,14 +76,25 @@ h2 {
   perspective: 1000;
 }
 
+.front, .back {
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
 .back {
   background-color: #D77F58;
-  border-radius: 5px;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.site-link {
+  margin-left: 30%;
+  background-color: #849BC4;
+  padding: 7px 15px 5px 15px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .back > p {
@@ -124,11 +136,16 @@ input[type="submit"] {
   color: #fff;
   background-color: #7d9ed8;
   padding: 8px 45px 5px 45px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
 }
 
 footer {
   background-color: #849BC4;
-  padding: 3% 12%;
+  padding: 3% 12% 0 12%;
 }
 
 .social {
@@ -152,5 +169,13 @@ footer {
 }
 
 .angle-down {
-  padding: 10% 50% 0 50%;
+  padding: 12% 50% 0 50%;
+}
+
+.section-title > p {
+  margin-top: 0;
+}
+
+.text > p, .contact-text > p {
+  margin-top: 0;
 }
