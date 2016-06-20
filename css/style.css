@@ -59,6 +59,11 @@ h2 {
   margin-left: 20%;
 }
 
+.picture {
+  width: 300px;
+  height: 300px;
+}
+
 .portfolio {
   background-color: #849BC4;
   padding: 3% 0 5% 0;
