@@ -66,7 +66,7 @@ h2 {
 
 .portfolio {
   background-color: #849BC4;
-  padding: 3% 0 5% 0;
+  padding: 2% 0 5% 0;
 }
 
 .portfolio > h1 {
@@ -103,7 +103,7 @@ a {
 }
 
 .back > p {
-  padding: 15px;
+  padding: 3px 20px 0 20px;
 }
 
 .square {
@@ -144,8 +144,14 @@ input[type="submit"] {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .fa {
   cursor: pointer;
+}
+
+input[type="submit"]:active {
+  transform: translateY(4px);
+  outline: none;
+  box-shadow: none;
 }
 
 footer {
@@ -165,7 +171,10 @@ footer {
 
 .fa {
   padding: 0 15px;
-  cursor: pointer;
+}
+
+.social .fa:hover {
+  color: #e8946f;
 }
 
 .fa-smile-o {
@@ -177,10 +186,14 @@ footer {
   padding: 12% 50% 0 50%;
 }
 
-.section-title > p {
+.text > p, .contact-text > p {
   margin-top: 0;
 }
 
-.text > p, .contact-text > p {
-  margin-top: 0;
+.small-text {
+  font-size: 14px;
+}
+
+.copyright {
+  font-weight: 100;
 }

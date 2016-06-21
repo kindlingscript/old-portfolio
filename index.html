@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>rt | ks</title>
+  <title>rebecca taylor</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700" rel="stylesheet">
   <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
     <div class="screenshots">
       <div class="card square">
         <div class="front">
-          <img src="images/streetfighter.png" class="street square">
+          <img src="images/streetfighter.png" class="square">
         </div>
         <div class="back">
           <p>Using gifs of Ryu from the video game "Street Fighter", I used jQuery to smoothly animate two actions for the user to play with, as well as incorporated two music tracks.</p>
@@ -44,7 +44,7 @@
       </div>
       <div class="card-2 square">
         <div class="front">
-          <img src="images/shopping-list.png" class="street square">
+          <img src="images/shopping-list.png" class="square">
         </div>
         <div class="back">
           <p>A personal shopping list app made with jQuery. You can add, check off, undo the check off, and delete your items. A small autofinish function is also used.</p>
@@ -53,7 +53,7 @@
       </div>
       <div class="card-3 square">
         <div class="front">
-          <img src="images/hot-or-cold.png" class="street square">
+          <img src="images/hot-or-cold.png" class="square">
         </div>
         <div class="back">
           <p>This is a number guessing game in which the objective is to correctly guess the "magic number" (between 1 and 100). A new number is generated with each game.</p>
@@ -65,19 +65,20 @@
     <div class="screenshots">
       <div class="card-4 square">
         <div class="front">
-          <img src="images/korra.png" class="street square">
+          <img src="images/korra.png" class="square">
         </div>
         <div class="back">
-          <p>Lorem ipsum</p>
+          <p>Using an array of JavaScript objects, I created a short quiz for those who have watched "The Legend of Korra", a show that aired on Nick a few years ago. Bonus points if you're a fan of it, too! :^D</p>
           <p><a href="http://kindlingscript.github.io/lok-quiz" target="_blank" class="site-link">Visit the site</a></p>
         </div>
       </div>
       <div class="card-5 square">
         <div class="front">
-          <img src="images/tune-out.png" class="street square">
+          <img src="images/tune-out.png" class="square">
         </div>
         <div class="back">
-          <p>Lorem ipsum</p>
+          <p class="small-text">Need to relax, kick back and listen to some ambient music while watching a slideshow of natural scenery you pick out? That's the purpose of this application.</p>
+          <p class="small-text">Put in a type of scenery you enjoy (such as "mountainside" or "beach"), pick out a genre of music you like, and get some results from the Flickr and SoundCloud APIs.</p>
           <p><a href="http://kindlingscript.github.io/tune-out" target="_blank" class="site-link">Visit the site</a></p>
         </div>
       </div>
@@ -90,10 +91,11 @@
       <h1>wanna talk?</h1>
       <p>Whether you'd like to ask me more about my work, look into hiring me for your project (I'm available!), or just want to say hello, feel free to fill in the following form and I'll get back to you as soon as possible.</p>
     </div>
-    <form>
-      <input type="text" size="40" placeholder="Your name"></input>
-      <input type="email" size="40" placeholder="Your email"></input>
-      <textarea rows="5" cols="50" placeholder="Say hi if you want! Just start typing :)"></textarea>
+    <form method="post" action="contact.php">
+      <input type="text" size="40" placeholder="Your name" name="name" required></input>
+      <input type="email" size="40" placeholder="Your email" name="email" required></input>
+      <input style="display:none;" type="text" name="hello" value="" />
+      <textarea rows="5" cols="50" placeholder="Say hi if you want! Just start typing :)" name="message" required></textarea>
       <input type="submit" value="send"></input>
     </form>
   </section>
