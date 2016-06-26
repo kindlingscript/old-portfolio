@@ -7,6 +7,8 @@ body {
   background: url('../images/portfolio-pic.jpeg') no-repeat 50% 100%;
   background-size: cover;
   height: 50em;
+  position: relative;
+  text-align: center;
 }
 
 .welcome {
@@ -20,6 +22,10 @@ h1 {
   margin: 0;
   font-style: italic;
   font-weight: 600;
+}
+
+.greeting {
+  text-align: left;
 }
 
 h2 {
@@ -38,7 +44,6 @@ h2 {
   padding: 10px 15px 9px 15px;
   color: #fff;
   border-radius: 5px;
-  margin-left: 41%;
 }
 
 .contact-click:focus,
@@ -195,12 +200,22 @@ footer {
 }
 
 .angle-down {
-  padding: 48% 0 0 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
 }
 
-.angle-down > p {
-  margin-left: -20px;
-  margin-bottom: 0;
+.fa-angle-double-down:hover {
+  -webkit-animation: rubberBand 1s;
+  animation: rubberBand 1s;
+}
+
+.angle-down p {
+  margin: 0;
 }
 
 .text > p, .contact-text > p {
@@ -219,25 +234,79 @@ footer {
   font-style: italic;
 }
 
-@media only screen and (max-width: 550px) {
+textarea {
+  resize: vertical;
+}
+
+@media only screen and (max-width: 1000px) {
   .welcome {
-    margin-top: 60%;
-    padding-top: 20px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
   }
-  /*h1 {
-    font-size: 3em;
-  }*/
+  .landing h1 {
+    text-align: center;
+  }
+  .landing h2 {
+    padding-left: 50px;
+  }
+  .about {
+    display: block;
+  }
+  .picture {
+    margin: 0 25% 7% 25%;
+  }
+  .text {
+    margin: 0 10%;
+  }
+  .smaller {
+    padding-left: 3%;
+  }
+  .contact {
+    justify-content: flex-start;
+  }
+  .cta {
+    padding: 0 22%;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .contact {
+    display: block;
+  }
+  .cta {
+    width: 300px;
+    padding: 0;
+    margin: 0 auto 20px auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
   h2 {
-    width: 350px;
+    font-size: 1em;
   }
-  .angle-down {
-    padding-top: 45em;
-    padding-left: 40%;
+  .welcome {
+    left: 49%;
+    padding-right: 6%;
+  }
+  .greeting {
+    font-size: 3em;
+  }
+  .landing h2 {
+    /*width: 350px;*/
+    padding-left: 20px;
   }
   .contact-click {
     margin-bottom: 20px;
+  }
+  .picture {
+    margin: 30px 0;
+  }
+  .text {
+    margin: 0;
   }
   .about {
     display: block;
@@ -247,7 +316,7 @@ footer {
     margin-left: 0;
   }
   .about-header {
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin-bottom: 15px;
   }
   .portfolio-header {
@@ -270,5 +339,12 @@ footer {
   }
   .scroll {
     display: none;
+  }
+  [type='text'],
+  [type='email'] {
+    width: 75%;
+  }
+  h1 {
+    font-size: 2.5em;
   }
 }

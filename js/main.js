@@ -5,10 +5,6 @@ $(document).ready(function() {
     }, 2000);
   });
 
-  $(".fa-angle-double-down").hover(function() {
-    $(this).effect("bounce", 2000);
-  });
-
   $('.fa-angle-double-down').click(function() {
     $('html, body').animate({
         scrollTop: $('.about').offset().top
@@ -20,4 +16,8 @@ $(document).ready(function() {
     speed: 1500,
     reverse: true
   });
+
+  $(window).resize(function() {
+    $('.landing').height($(window).height());
+  }).resize();
 });
